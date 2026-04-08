@@ -27,8 +27,8 @@ def multiply(a, b):
 def divide(a, b):
     try:
         return a/b
-    except ZeroDivisionError as e:
-        print(e)
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Divisor cannot be 0")
     
 def log(a,b):
     try:
