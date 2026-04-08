@@ -25,10 +25,9 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    try:
-        return a/b
-    except ZeroDivisionError:
-        raise ZeroDivisionError("Divisor cannot be 0")
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by 0")
+    return a / b
     
 def log(a,b):
     try:
