@@ -33,7 +33,6 @@ def logarithm(a,b):
     try:
         return math.log(b,a)
     except ValueError as e:
-        print(e)
         raise ValueError("Argument must be positive")
 
 def exp(a,b):
