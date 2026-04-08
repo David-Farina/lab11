@@ -17,7 +17,7 @@ def multiply(a, b):
 
 def divide(a, b):
     try:
-        a/b
+        return a/b
     except ZeroDivisionError:
         raise ZeroDivisionError
 def log(a,b):
