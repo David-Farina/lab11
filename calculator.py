@@ -22,12 +22,16 @@ def divide(a, b):
         raise ZeroDivisionError
 def log(a,b):
     try:
-        math.log(b,a)
+        return math.log(b,a)
     except ValueError:
         raise ValueError
 
 def exp(a,b):
-    a**b
+    return a**b
+
+
+
+
 
 
 
