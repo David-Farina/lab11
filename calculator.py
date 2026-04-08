@@ -36,7 +36,7 @@ def log(a,b):
         return math.log(b,a)
     except ValueError as e:
         print(e)
-        return None
+        raise ValueError("Argument must be positive")
 
 def exp(a,b):
     return a**b
