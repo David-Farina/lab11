@@ -29,7 +29,7 @@ def divide(a, b):
         raise ZeroDivisionError("Cannot divide by 0")
     return a / b
     
-def log(a,b):
+def logarithm(a,b):
     try:
         return math.log(b,a)
     except ValueError as e:
