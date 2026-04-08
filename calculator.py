@@ -10,8 +10,7 @@ def square_root(a):
     try:
         return math.sqrt(a)
     except ValueError:
-        print("Value cannot be < 0")
-        return None
+        raise ValueError("Value cannot be < 0")
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
